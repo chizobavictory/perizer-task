@@ -27,7 +27,6 @@ const searchUsers = (req, res) => {
         };
         // Filtering users based on the search criteria
         let filteredUsers = data_1.users.filter(matchesSearchCriteria);
-        console.log("filteredUsers", filteredUsers);
         // Adding team names to the result
         filteredUsers = filteredUsers.map((user) => {
             const team = data_1.teams.find((t) => t.id === user.team);

@@ -28,7 +28,6 @@ export const searchUsers = (req: Request, res: Response): void => {
 
     // Filtering users based on the search criteria
     let filteredUsers = users.filter(matchesSearchCriteria);
-    console.log("filteredUsers", filteredUsers);
 
     // Adding team names to the result
     filteredUsers = filteredUsers.map((user) => {
